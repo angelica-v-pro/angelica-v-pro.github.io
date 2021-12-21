@@ -1,0 +1,520 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+/*GENERAL*/
+
+a, a:link{
+	text-decoration: none;
+}
+
+
+
+.titres_sections{
+	font-family: novel-sans-hebrew, sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+	color: white;
+}
+
+
+
+.conteneur_titre_formations{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+
+}
+
+
+
+
+
+.div_titres_sections{
+	width: 30%; 
+	height: 3px;
+	background-color: white;
+}
+
+
+
+/*----------------------HEADER----------------------------*/
+
+header{
+	background-color: #080707;
+	padding: 25px 135px 25px 135px;
+}
+
+
+header a{
+	color: white;
+	font-family: novel-sans-hebrew, sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+
+}
+
+
+.wrapper_header{
+	max-width: 1650px;
+	margin: 0 auto;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.conteneur_liens_header{
+	display: flex;
+	justify-content: space-between;
+	column-gap: 80px;
+}
+
+
+.sousmenu_apropos_ul{
+	display: none;
+	list-style: none;
+}
+
+
+.menu_apropos_li{
+	display: block;
+	position: absolute;
+}
+
+
+.apropos{
+	color: #e43948;
+	font-weight: 600;
+}
+
+
+.menu_apropos_ul:hover .sousmenu_apropos_ul{
+	display:block;
+	background-color:#080707; 
+}
+
+
+.li_apropos{
+	padding: 5px 20px;
+}
+
+
+.liens_header{
+	font-size: 16px;
+}
+
+
+.liens_header:hover{
+	color: #e43948;
+}
+
+
+.competences_li{
+	padding-bottom: 15px;
+}
+
+
+.contact{
+	padding-left: 150px;
+}
+
+
+
+
+
+/*--------------------HERO------------------*/
+
+.hero{
+	background-image: url(../img/fond-accueil.png);
+	background-size: cover;
+
+	padding: 70px 145px;
+}
+
+
+.wrapper_hero{
+	max-width: 1650px;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.col_gauche{
+	width: 50%;
+}
+
+/*Tuile top*/
+.tuile_top, .tuile_bottom{
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 20px;
+	border-radius: 13px;
+}
+
+
+.tuile_top{
+	margin-bottom: 15px;
+}
+
+h1{
+	font-family: novel-sans-hebrew, sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.h2_hero{
+	font-family: novel-sans-hebrew, sans-serif;
+	font-size: 40px;
+	font-weight: 400;
+	text-align: center;
+}
+
+
+.identite{
+	font-weight: bold;
+	font-size: 45px;
+}
+
+
+
+/*Tuile bottom*/
+
+.tuile_bottom p{
+	font-family: new-order, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+
+	line-height: 20px;
+}
+
+
+.p1_hero, .p2_hero{
+	padding-bottom: 20px;
+}
+
+
+/*col droite*/
+.col_droite{
+	width: 485px;
+	height: 485px;
+
+	border-radius: 300px;
+	border: 1px solid black;
+}
+
+
+
+
+
+/*--------------------FORMA & DIPLOMES------------------*/
+.section_formations{
+	background-color: #1d3557;
+	background-size: ;
+
+	padding-top: 80px;
+}
+
+
+.trace-g-losange1{
+	background-image: url(../img/trace-g-losange1.svg);
+	position: absolute;
+	width: 80px;
+	height: 20px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+.losanges_formations{
+	width: 70px;
+	height: 70px;
+	background-color: #c94251;
+	border-radius: 10px;
+	outline: 4px solid rgba(255, 255, 255, 0.3);
+	color: white;
+
+	transform: rotate(45deg);
+}
+
+
+
+.conteneur_positions_dates_forma{
+	width: 70px;
+	height: 70px;
+
+	transform: rotate(-45deg);
+}
+
+
+.dates_formations{
+	font-family: new-order, sans-serif;
+	font-weight: 400;
+	font-size: 11px;
+	
+}
+
+
+.tuiles_formations{
+	padding: 20px 35px;
+	background-color: #14253d;
+	border-radius: 20px;
+}
+
+
+.h3_formations{
+	font-family: new-order, sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	color: #66C3FF;
+
+	text-align: center;
+}
+
+
+.lieux_formations{
+	font-family: new-order, sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	text-align: center;
+	padding:10px 0;
+	color: white;
+}
+
+
+.p_competences_formations{
+	font-family: novel-sans-hebrew, sans-serif;
+	font-weight: 200;
+	font-size: 16px;
+	padding:5px 0;
+
+	color: white;
+}
+
+
+.fas{
+	transform: scale(0.7);
+}
+
+/*-----------Disposition Grid----------*/
+.conteneur_grid_formations{
+	padding-top: 100px;
+
+	display: grid;
+	grid-template-columns: 1fr 0.4fr 0.3fr 1fr 1fr 1fr 0.3fr 0.8fr;
+	grid-template-rows: 1.5fr 0fr 1fr 1.5fr 4.25fr 1fr 1.5fr 4.6fr 1fr 1.5fr 2.5fr;
+
+	align-items: center;
+	object-fit: cover;
+}
+
+
+.trace-cel-1-1{
+	grid-column: 1/span 1;
+	grid-row: 1/span 1;
+}
+
+
+.losange_o3w{
+	grid-column: 2/span 1;
+	grid-row: 1/span 1;
+	place-self:center;
+}
+
+
+
+.trace-cel-3-1{
+	grid-column: 3/span 1;
+	grid-row: 1/span 1;
+}
+
+
+
+.tuile_o3w{
+	grid-column: 4/span 2;
+	grid-row: 1/span 1;
+}
+
+
+
+.trace-cel-5-1{
+	grid-column: 6/span 3;
+	grid-row: 1/span 3;
+
+	align-self: start;
+}
+
+
+
+.losange_bts{
+	grid-column: 8/span 1;
+	grid-row: 4/span 1;
+	place-self:center;
+}
+
+
+
+.trace-cel-6-4{
+	grid-column: 7/span 1;
+	grid-row: 4/ span 1;
+}
+
+
+
+.tuile_bts{
+	grid-column: 5/span 2;
+	grid-row: 4/span 2;
+}
+
+
+
+.trace-cel-2-5{
+	grid-column: 2/span 3;
+	grid-row: 5/ span 2;
+}
+
+
+
+.losange_manaa{
+	grid-column: 2/span 1;
+	grid-row: 7/span 1;
+	place-self:center;
+}
+
+
+
+.trace-cel-2-8{
+	grid-column: 2/span 2;
+	grid-row: 8/span 1;
+}
+
+
+
+.tuile_manaa{
+	grid-column: 4/span 2;
+	grid-row: 7/span 2;
+}
+
+
+
+.trace-cel-6-7{
+	grid-column: 6/span 3;
+	grid-row: 7/span 3;
+}
+
+
+
+.losange_bac{
+	grid-column: 8/span 1;
+	grid-row: 10/span 1;
+	place-self:center;
+}
+
+
+
+.trace-cel-7-10{
+	grid-column: 7/span 1;
+	grid-row: 10/span 1;
+}
+
+
+
+.tuile_bac{
+	grid-column: 5/span 2;
+	grid-row: 10/ span 2;
+}
+
+
+/*-----------Partie O3W---------*/
+
+.juillet_2021{
+	position: relative;
+	left: 10px;
+	top: 13px;
+
+}
+
+
+.mars_2022{
+	position: relative;
+	left: 10px;
+	top: 18px;
+}
+
+
+.arrow_o3w{
+	position: relative;
+	left: 25px;
+	top: 16px;
+}
+
+
+/*-------Bts-------*/
+.septembre_2018{
+	position: relative;
+	top: 13px;
+	text-align: center;
+
+}
+
+
+.mai_2020{
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
+
+
+.arrow_bts{
+	position: relative;
+	left: 27px;
+	top: 11px;
+}
+
+
+/*------Manaa----*/
+.septembre_2017{
+	position: relative;
+	top: 13px;
+	text-align: center;
+}
+
+
+.avril_2018{
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
+
+
+/*----Bac----*/
+.septembre_2014{
+	position: relative;
+	top: 13px;
+	text-align: center;
+}
+
+
+.juin_2016{
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
+
+
+.arrow_bac{
+	position: relative;
+	left: 27px;
+	top: 11px;
+}

@@ -227,16 +227,6 @@ h1{
 }
 
 
-.trace-g-losange1{
-	background-image: url(../img/trace-g-losange1.svg);
-	position: absolute;
-	width: 80px;
-	height: 20px;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-
-
 .losanges_formations{
 	width: 70px;
 	height: 70px;
@@ -312,127 +302,69 @@ h1{
 	padding-top: 100px;
 
 	display: grid;
-	grid-template-columns: 1fr 0.4fr 0.3fr 1fr 1fr 1fr 0.3fr 0.8fr;
-	grid-template-rows: 1.5fr 0fr 1fr 1.5fr 4.25fr 1fr 1.5fr 4.6fr 1fr 1.5fr 2.5fr;
+	grid-template-columns: 3fr 3fr 1.5fr 3fr 1.5fr 3fr;
+	grid-template-rows: 1fr 1.5fr 1fr 2.5fr 1fr 2.5fr 1fr 2fr;
 
 	align-items: center;
 	object-fit: cover;
 }
 
 
-.trace-cel-1-1{
+
+.background_losange_O3W{
 	grid-column: 1/span 1;
 	grid-row: 1/span 1;
-}
-
-
-.losange_o3w{
-	grid-column: 2/span 1;
-	grid-row: 1/span 1;
-	place-self:center;
+	justify-self:center;
 }
 
 
 
-.trace-cel-3-1{
-	grid-column: 3/span 1;
-	grid-row: 1/span 1;
-}
-
-
-
-.tuile_o3w{
-	grid-column: 4/span 2;
-	grid-row: 1/span 1;
-}
-
-
-
-.trace-cel-5-1{
-	grid-column: 6/span 3;
+.background_tuile_O3W{
+	grid-column: 2/span 4;
 	grid-row: 1/span 3;
-
-	align-self: start;
 }
 
 
 
-.losange_bts{
-	grid-column: 8/span 1;
-	grid-row: 4/span 1;
-	place-self:center;
-}
-
-
-
-.trace-cel-6-4{
-	grid-column: 7/span 1;
-	grid-row: 4/ span 1;
-}
-
-
-
-.tuile_bts{
-	grid-column: 5/span 2;
-	grid-row: 4/span 2;
-}
-
-
-
-.trace-cel-2-5{
-	grid-column: 2/span 3;
-	grid-row: 5/ span 2;
-}
-
-
-
-.losange_manaa{
-	grid-column: 2/span 1;
-	grid-row: 7/span 1;
-	place-self:center;
-}
-
-
-
-.trace-cel-2-8{
-	grid-column: 2/span 2;
-	grid-row: 8/span 1;
-}
-
-
-
-.tuile_manaa{
+.background_losange_bts{
 	grid-column: 4/span 2;
-	grid-row: 7/span 2;
+	grid-row: 3/span 1;
+	justify-self:end;
 }
 
 
 
-.trace-cel-6-7{
-	grid-column: 6/span 3;
-	grid-row: 7/span 3;
+.background_tuile_bts{
+	grid-column: 1/span 4;
+	grid-row: 3/span 3;
 }
 
 
 
-.losange_bac{
-	grid-column: 8/span 1;
-	grid-row: 10/span 1;
-	place-self:center;
+.background_losange_manaa{
+	grid-column: 1/span 1;
+	grid-row: 5/span 1;
 }
 
 
 
-.trace-cel-7-10{
-	grid-column: 7/span 1;
-	grid-row: 10/span 1;
+.background_tuile_manaa{
+	grid-column: 2/span 4;
+	grid-row: 5/span 3;
 }
 
 
 
-.tuile_bac{
-	grid-column: 5/span 2;
-	grid-row: 10/ span 2;
+.background_losange_bac{
+	grid-column: 4/span 2;
+	grid-row: 7/span 1;
+}
+
+
+
+.background_tuile_bac{
+	grid-column: 3/span 2;
+	grid-row: 7/ span 2;
 }
 
 
